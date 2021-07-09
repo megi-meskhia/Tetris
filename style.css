@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+body {
+  background-size: 100%;
+  color: #e9e97e;
+  font-size: 20px;
+  text-align: center;
+  font: 1.4em "Press start 2P";
+  background-image: url('img/tetris.png');
+} 
+h1{
+  font-size: 26px;
+}
+img {
+  width: 200px; 
+}
+
+.ins {
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  border-style: outset;
+  border-width: 10px;
+  margin-top: 160px;
+  margin-left: 150px;
+  backdrop-filter: blur(2px);
+  border-color: #9e9d9d;
+}
+p{
+  font-size: 15px;
+  padding: 10px;
+}
+.score {
+  border-style: outset;
+  border-width: 10px;
+  align-items: center;
+  padding-top: 25px;
+  width: 300px;
+  height: 100px;
+  margin-left: 150px;
+  backdrop-filter: blur(2px);
+  border-color: #9e9d9d;
+  position: absolute;
+}
+
+#tetris {
+  height: 80vh;
+  border-style: outset;
+  border-width: 10px;
+  border-color: #9e9d9d;
+}
+
+.material-icons {
+  position: absolute;
+  margin-left: 40px;
+  border-style: outset;
+  border-width: 10px;
+  border-color: #9e9d9d;
+  padding: 5px;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+}
+#soundOff{
+  margin-top: 100px;
+}
+
+.gameOver {
+  position: absolute;
+  border-style: outset;
+  border-width: 10px;
+  border-color: #9e9d9d;
+  width: 200px;
+  font-size: 20px;
+  backdrop-filter: blur(2px);
+  margin-left: 560px;
+  margin-top: -350px;
+  display: none;
+}
+#play {
+  padding: 5px;
+  font: 0.8em "Press start 2P";
+  margin-bottom: 10px;
+}
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+     
+    <h1>TETRIS</h1>
+
+    <div class="score"> Score: <br><br><span id="score"></span> </div>
+    
+    <div class="ins">
+        <h3>Controls:</h3>
+        <p>Left and Right: move side to side. <br><br> Up: rotate. <br><br> Down: fall faster.</p>
+        <img src="img/arrow.png">
+    </div>
+            
+    <canvas id="tetris" width="240" height="400"></canvas>
+     
+
+    <i id="sound" onclick="music()" class="material-icons" style="font-size:48px;">volume_up</i>
+    <i id="soundOff" onclick="musicOff()" class="material-icons" style="font-size:48px;">volume_off</i>
+
+    <div id="gameOver" class="gameOver">
+        <h2>Game Over!</h2>
+        <button id="play" onclick="play()">Play Again</button>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
