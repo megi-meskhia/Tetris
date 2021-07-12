@@ -2,28 +2,36 @@
 body {
   background-size: 100%;
   color: #e9e97e;
-  font-size: 20px;
   text-align: center;
   font: 1.4em "Press start 2P";
-  background-image: url('img/tetris.png');
+  background-image:url("/img/background.png");
 } 
+
 h1{
-  font-size: 26px;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 img {
-  width: 200px; 
+  max-width: 200px;
+  width: 100%; 
 }
 
 .ins {
   position: absolute;
-  width: 300px;
-  height: 350px;
+  max-width: 300px;
+  width: 100%; 
+  max-height: 350px;
+  height: 100%;
   border-style: outset;
   border-width: 10px;
   margin-top: 160px;
-  margin-left: 150px;
+  margin-left: 170px;
   backdrop-filter: blur(2px);
   border-color: #9e9d9d;
+}
+h3 {
+  margin-top: 20px;
 }
 p{
   font-size: 15px;
@@ -34,9 +42,11 @@ p{
   border-width: 10px;
   align-items: center;
   padding-top: 25px;
-  width: 300px;
-  height: 100px;
-  margin-left: 150px;
+  max-width: 300px;
+  width: 100%; 
+  max-height: 130px;
+  height: 100%;
+  margin-left: 170px;
   backdrop-filter: blur(2px);
   border-color: #9e9d9d;
   position: absolute;
@@ -60,25 +70,34 @@ p{
   backdrop-filter: blur(2px);
 }
 #soundOff{
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .gameOver {
-  position: absolute;
+  position: fixed;
   border-style: outset;
   border-width: 10px;
   border-color: #9e9d9d;
-  width: 200px;
-  font-size: 20px;
+  max-width: 230px;
+  width: 100%; 
+  font-size: 25px;
   backdrop-filter: blur(2px);
-  margin-left: 560px;
+  margin-left: 565px;
   margin-top: -350px;
-  display: none;
+  visibility: hidden;
+}
+h2{
+  padding: 20px;
 }
 #play {
   padding: 5px;
-  font: 0.8em "Press start 2P";
+  font: 0.6em "Press start 2P";
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#play:hover {
+  background-color: rgb(161, 149, 149);
 }
 
 

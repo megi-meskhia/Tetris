@@ -1,9 +1,7 @@
 const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
-const sound = document.getElementById('sound');
-const soundOff = document.getElementById('soundOff');
 const gameOver = document.getElementById('gameOver');
-const play = document.getElementById('play');
+
 
 context.scale(20, 20);
 
@@ -11,7 +9,7 @@ var audio = new Audio('music.mp3');
 
 function music(){
     audio.play();
-}
+}                   
 function musicOff(){
     audio.pause();
 }
@@ -146,8 +144,7 @@ function playerDrop(){
         merge(arena, player);
         playerReset();
         arenaSweep();
-        updateScore();
-        
+        updateScore();     
     }
     dropCounter = 0;
 }
@@ -169,7 +166,13 @@ function playerReset(){
         arena.forEach(row => row.fill(0));
         player.score = 0;
         updateScore();
+        gameOver.style.visibility = 'visible';
     }               
+}
+
+function playAgain(){
+    gameOver.style.visibility = 'hidden';
+    playerReset();
 }
 
 ////////// rotate ///////////////
@@ -228,11 +231,12 @@ function update(time = 0) {
     requestAnimationFrame(update);
 }
 
+
 function updateScore(){
     document.getElementById('score').innerText = player.score;
 }
 
-////////// color section /////////
+///////////////////
 
 const colors=[
     null,
@@ -274,7 +278,6 @@ playerReset();
 updateScore();
 update();
 
-////////////////////////////////////
 /////////////////////////////////////
 /////////////////////////////////////
 
