@@ -4,7 +4,7 @@ body {
   color: #e9e97e;
   text-align: center;
   font: 1.4em "Press start 2P";
-  background-image: url("background.png");
+  background-image: url("/img/background.png");
 } 
 
 h1{
