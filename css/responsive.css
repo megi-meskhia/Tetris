@@ -34,10 +34,31 @@
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
+    h1 {
+      margin-left: 40%;
+    }
+    .ins {
+      margin-top: 21%;
+      margin-left: 2%;
+    }
+    .score {
+      margin-top: 6%;
+      margin-left: 2%;
+    }
+    .gameOver {
+      margin-left: 38%;
+      margin-top: -35%;
+    }
+    #soundOff{
+      margin-top: 15%;
+    }
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
+    h1 {
+      color: chartreuse;
+    }
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
