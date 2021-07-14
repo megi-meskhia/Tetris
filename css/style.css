@@ -5,30 +5,31 @@ body {
   text-align: center;
   font: 1.4em "Press start 2P";
   background-image: url("/img/background.png");
+  background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.959);
 } 
 
 h1{
   position: absolute;
   font-size: 30px;
-  margin-top: 30px;
-  margin-left: 580px;
+  margin-top: 2%;
+  margin-left: 43%;
 }
 .key {
   max-width: 200px;
-  width: 100%; 
+  width: 50vh; 
 }
 
 .ins {
   position: absolute;
   max-width: 300px;
-  width: 100%; 
+  width: 50vh; 
   max-height: 350px;
-  height: 100%;
+  height: 60vh;
   border-style: outset;
   border-width: 10px;
-  margin-top: 240px;
-  margin-left: 170px;
+  margin-top: 17.5%;
+  margin-left: 13%;
   backdrop-filter: blur(2px);
   border-color: #9e9d9d;
 }
@@ -45,11 +46,11 @@ p{
   align-items: center;
   padding-top: 25px;
   max-width: 300px;
-  width: 100%; 
+  width: 50vh; 
   max-height: 130px;
-  height: 100%;
-  margin-top: 80px;
-  margin-left: 170px;
+  height: 30vh;
+  margin-top: 6%;
+  margin-left: 13%;
   backdrop-filter: blur(2px);
   border-color: #9e9d9d;
   position: absolute;
@@ -61,26 +62,26 @@ p{
   border-style: outset;
   border-width: 10px;
   border-color: #9e9d9d;
-  margin-top: 80px;
+  margin-top: 6%;
 }
 
 .material-icons {
   position: absolute;
-  margin-left: 40px;
+  margin-left: 2%;
   border-style: outset;
   border-width: 10px;
   border-color: #9e9d9d;
   padding: 5px;
   cursor: pointer;
   backdrop-filter: blur(2px);
-  margin-top: 80px;
+  margin-top: 6%;
 }
 #soundOff{
-  margin-top: 160px;
+  margin-top: 12%;
 }
 
 .gameOver {
-  position: fixed;
+  position: absolute;
   border-style: outset;
   border-width: 10px;
   border-color: #9e9d9d;
@@ -88,8 +89,8 @@ p{
   width: 100%; 
   font-size: 25px;
   backdrop-filter: blur(2px);
-  margin-left: 565px;
-  margin-top: -350px;
+  margin-left: 41.6%;
+  margin-top: -25%;
   visibility: hidden;
 }
 h2{
